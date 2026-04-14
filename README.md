@@ -1,39 +1,179 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌙 Tarteela – Quran Tilawat & Dua App
 
-## Getting Started
+Tarteela is a modern Islamic web app built with **Next.js, Node.js, and MySQL**.
+It allows users to read Quran, listen to tilawat, and access daily duas in a clean and peaceful UI.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+* 📖 Quran Surah listing
+* 📜 Ayah display with Arabic text & translation
+* 🎧 Tilawat (audio recitation support)
+* 🤲 Dua collection (categorized)
+* ⭐ Favorites (save ayahs & duas)
+* 🌙 Clean Islamic UI design
+
+---
+
+## 🧱 Tech Stack
+
+### Frontend
+
+* Next.js (App Router)
+* TypeScript (.tsx)
+* CSS / Tailwind (optional)
+
+### Backend
+
+* Node.js (Express.js)
+
+### Database
+
+* MySQL
+
+### Storage
+
+* Cloud (AWS S3 / Firebase) for audio files
+
+---
+
+## 📁 Project Structure
+
+```
+tarteela-app/
+├─ backend/        # Node.js API
+├─ mobile/         # React Native (optional)
+├─ web/            # Next.js frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1️⃣ Clone the repository
 
-## Learn More
+```
+git clone https://github.com/your-username/tarteela-app.git
+cd tarteela-app
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2️⃣ Backend Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+cd backend
+npm install
+```
 
-## Deploy on Vercel
+Create `.env` file:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=yourpassword
+DB_NAME=tarteela
+JWT_SECRET=yoursecret
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# tarteela
-# tarteela
+Run server:
+
+```
+node server.js
+```
+
+---
+
+### 3️⃣ Frontend Setup (Next.js)
+
+```
+cd web
+npm install
+npm run dev
+```
+
+App will run on:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🔌 API Endpoints
+
+### Surahs
+
+```
+GET /surahs
+```
+
+### Ayahs
+
+```
+GET /ayahs/:surah_id
+```
+
+### Duas
+
+```
+GET /duas
+GET /duas?category=morning
+```
+
+### Favorites
+
+```
+POST /favorites
+GET /favorites/:user_id
+```
+
+---
+
+## 🗄️ Database
+
+Main tables:
+
+* users
+* surahs
+* ayahs
+* audio
+* duas
+* favorites
+
+---
+
+## 💡 Future Improvements
+
+* 🔐 Authentication (JWT login system)
+* 📥 Offline mode
+* 🔍 Search & filter
+* 🎨 Advanced UI (Islamic theme)
+* 📱 Mobile app (React Native)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Zaki ur Rehman**
+
+---
+
+## 🌟 Support
+
+If you like this project, please ⭐ the repository!
 # tarteela
