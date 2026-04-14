@@ -54,7 +54,7 @@ tarteela-app/
 ### 1️⃣ Clone the repository
 
 ```
-git clone https://github.com/your-username/tarteela-app.git
+git clone https://github.com/chzi89/tarteela-app.git
 cd tarteela-app
 ```
 
@@ -176,4 +176,5 @@ This project is open-source and available under the MIT License.
 ## 🌟 Support
 
 If you like this project, please ⭐ the repository!
+# tarteela
 # tarteela
