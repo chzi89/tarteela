@@ -13,10 +13,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         
       </head>
-      <body>
-        <Navbar/>
-        {children}
-      </body>
+      
+<body suppressHydrationWarning>
+  <Navbar />
+  {children}
+</body>
     </html>
   );
 }

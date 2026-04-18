@@ -14,8 +14,8 @@ export default function Navbar() {
 </div>
 </div>
 <div className="flex items-center gap-6">
-<button className="material-symbols-outlined text-[#154212] cursor-pointer hover:text-[#735C00] transition-colors duration-300" data-icon="settings">settings</button>
-<button className="material-symbols-outlined text-[#154212] cursor-pointer hover:text-[#735C00] transition-colors duration-300" data-icon="account_circle">account_circle</button>
+<button className="material-symbols-outlined text-[#154212] cursor-pointer hover:text-[#735C00] transition-colors duration-300" data-icon="settings"><p>&#x26ED;</p></button>
+<button className="material-symbols-outlined text-[#154212] cursor-pointer hover:text-[#735C00] transition-colors duration-300" data-icon="account_circle"><p>&#128100;</p></button>
 </div>
 </nav>
   

@@ -1,3 +1,5 @@
+"use client";   // ← add this as the very first line
+
 
 import Image from 'next/image';
 
@@ -227,7 +229,7 @@ export default function Home() {
 <nav className="grow flex flex-col gap-2">
 <a className="bg-[#735C00] text-white rounded-full mx-4 py-3 px-6 flex items-center gap-4" href="#">
 <span className="material-symbols-outlined" data-icon="menu_book" style={{fontVariationSettings: "'FILL' 1"}}>menu_book</span>
-<span className="font-sans uppercase tracking-widest text-xs">Holy Quran</span>
+<span className="font-sans uppercase tracking-widest text-xs" style={{color:'blue'}}>Holy Quran</span>
 </a>
 <a className="text-[#154212]/70 py-3 px-10 flex items-center gap-4 hover:bg-[#E4E4CC] rounded-full transition-all mx-4" href="#">
 <span className="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
